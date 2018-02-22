@@ -1,0 +1,40 @@
+body {
+		background-color: #1E7AB6;
+		color:red;
+		font-size:30px;
+}
+
+h1 {
+	text-align:center;
+	color:#FFF;
+	letter-spacing: 5px;
+	font-size:100px;
+	font-weight: lighter;
+}
+
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#F70808;
+	text-decoration: none;
+}
+
+
+.title {
+position:fixed;
+transform: rotate(270deg);
+float: left;
+margin-left: 0;
+margin-top:20%;
+font-size: 100px;
+color:#FFF;
+letter-spacing: 10px;
+}

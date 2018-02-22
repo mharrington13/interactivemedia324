@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>you are red,</title>
+	
+	<!-- 
+	***** START CSS ***** 
+	-->
+	<style>
+
+		/* You can change the colors, font, and so on below */
+
+		body {
+			background: #8C0909;
+			margin-left:50%;
+			font-size: 20px;
+			letter-spacing:5px;
+			text-transform:uppercase;
+			line-height: 30px;
+			color:#FFF;
+		}
+
+		.list-one {
+
+		}
+
+		.list-two {
+			text-indent: 1em;
+		}
+
+		.list-three {
+			text-indent: 2em;
+		}
+
+		.list-four {
+			text-indent: 3em;
+		}
+
+		p {
+			margin-bottom: 2em;
+		}
+
+	</style>
+	<!-- 
+	***** END CSS ***** 
+	-->
+
+
+	<!-- 
+	***** START JAVASCRIPT ***** 
+	-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			// list one content
+			var one = [
+				"you are the cigarette smoke, filling my lungs",
+				"you are the time ------ always fleeting",
+				"you are red",
+				"you are the long hair",
+				"you are blue",
+				"you are the lipstick stains on my coffee",
+				"you are the footprints, frozen in the mud",
+				"you are the cold air on my face",
+				"you are warm coffee, staining my teeth",
+				"you are broken glass",
+				"you are a broken record",
+				"you are a backpack full of bricks",
+				"you are an ugly christmas sweater in february",
+				"you are sweatpants on a tuesday",
+				"you are a foreign car, that costs more than my life",
+				"you are silent chatter",
+				"you are a wall of bricks",
+				"you are my heart, heavy",
+				"you are the black coffee",
+				"you are a loose fitted denim jacket"
+			];
+
+			// list two content
+			var two = [
+				"staining my lips",
+				"in the cold winter air",
+				"among all the people",
+				"among barren trees in the greyness of winter",
+				"in a puddle",
+				"among awkward goodbye's",
+				"in my frozen hair",
+				"among people, staring out of their windows",
+				"among the crows, always screaming",
+			];
+
+			// list three content
+			var three = [
+				"while engines, roaring",
+				"while children",
+				"while naked trees",
+				"while the birds",
+				"while the crows",
+				"while your friends",
+				"while our eyes",
+				"while our memories",
+				"while the noises",
+				"while sounds",
+				"while winter breezes",
+				"while the falling leaves",
+				"while snails",
+			];
+
+			// list four content
+			var four = [
+				"are solemnly laughing",
+				"are talking",
+				"are steadily observing",
+				"are thriving",
+				"are dancing in the wind",
+				"are patiently wondering",
+				"are staring",
+				"are running late",
+				"are freezing",
+				"are clutching for warmth",
+				"are in constant motion",
+				"are crying",
+				"are blowing in the wind",
+				"are watching",
+				"are hiding in the trees",
+				"are watching through glass windows",
+				"are pounding like a headache",
+			];
+
+			// This is a very common randomizing function.
+			// It takes a list (array) and returns one at random.
+			function select_random(x){
+				y = x[Math.floor(Math.random()*x.length)];
+				return y;
+			}
+
+			// This is the generator function
+			function generate(){
+
+				// Select a random item from each list
+				var selected_one = select_random(one);
+				var selected_two = select_random(two);
+				var selected_three = select_random(three);
+				var selected_four = select_random(four);
+
+				// Make a paragraph and then add the selected (random) item from each list list
+				$('body').append('<p>');
+				$('body').append('<div class="list-one">' + selected_one + '</div>');
+				$('body').append('<div class="list-two">' + selected_two + '</div>');
+				$('body').append('<div class="list-three">' + selected_three + '</div>');
+				$('body').append('<div class="list-four">' + selected_four + '</div>');
+				$('body').append('</p>');
+
+			}
+
+			// Run the generator every two seconds ("2000" in the code below)
+			function timeout() {
+			    setTimeout(function () {
+			        generate();
+			        timeout();
+			    }, 2000);
+			}
+
+			generate();
+
+			timeout();
+			
+		});
+
+	</script>
+	<!-- 
+	***** END JAVASCRIPT ***** 
+	-->
+
+</head>
+
+<body>
+
+	<!--
+	This is the visible portion.
+
+	If you want your words or phrases to go side-by-side, change...
+
+	<div></div>
+	to
+	<span></span>
+
+	in the code below.
+	-->
+
+</body>
+
+</html>
