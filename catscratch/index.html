@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  	<title>Cat Scratch Fever</title>
+  	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<style>
+body {
+	background-color: pink;
+}
+h1 {
+	font-family: Arial;
+	color: slategrey;
+}
+.cathover {
+   content:url(assets/images/catfever.png);
+   position:absolute;
+   margin-left:39.5%;
+   margin-top:0%;
+   z-index: 5;
+}​
+#menu:hover + .cathover{
+ display:block;
+}
+.pillow {
+  content:url(assets/images/pillow.png);
+  position:absolute;
+  margin-top:-10%;
+  margin-left:35%;
+  z-index: -1;
+}
+.catsleep {
+   content:url(assets/images/catsleep.png);
+   position:relative;
+   margin-left:22%;
+   margin-top:12%;
+}​
+.image{
+	content:url(assets/angrybackground.jpg);
+	height: 100%;
+	width: 100%;
+	position: relative;
+	padding-left: 10%;
+	padding-top: 10%;
+}
+</style>
+</head>
+
+<body>
+
+    <audio id="catscratchfever" loop>
+      <source src="catscratchfeverloop.m4a" type="audio/mpeg" loop>
+    </audio>
+	
+ <center>
+ 	<div class="image"></div>
+ 	<div class="cathover"></div>
+ 	<div class="catsleep"></div>
+ 	<div class="pillow"></div>
+
+ 	
+</center>
+
+
+
+
+	<script src='https://ajax.googleapis.com/ajax/libs/
+			jquery/2.1.4/jquery.min.js'>
+	</script>
+	<script type="text/javascript" src="assets/jquery.min.js">
+	</script>
+	<script type='text/javascript' src='assets/script.js'>
+	</script>
+</body>
+
+</html>

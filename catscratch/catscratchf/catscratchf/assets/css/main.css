@@ -1,0 +1,42 @@
+body {
+    background-image: url("images/floral.jpg");
+}
+
+.cathover {
+   content:url(images/cathover.png);
+   position:absolute;
+   margin-left:35%;
+   margin-top:0%;
+   z-index: 5;
+}​
+
+#menu:hover + .cathover{
+ display:block;
+}
+
+.pillow {
+  content:url(images/pillow.png);
+  position:absolute;
+  margin-top:-10%;
+  margin-left:30%;
+  z-index: -1;
+}
+
+
+
+.catsleep {
+   content:url(images/catsleep.png);
+   position:relative;
+   margin-left:22%;
+   margin-top:12%;
+}​
+
+.image{
+   content:url(images/angrybackground.jpg);
+   position:fixed;
+   left: 0;
+   top: 0;
+}
+
+
+
